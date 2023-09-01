@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\DetailTransaksi;
+use App\Models\stok;
 use Illuminate\Http\Request;
 
-class DetailTransaksiController extends Controller
+class StokController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class DetailTransaksiController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(DetailTransaksi $detailTransaksi)
+    public function show(stok $stok)
     {
         //
     }
@@ -42,7 +42,7 @@ class DetailTransaksiController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(DetailTransaksi $detailTransaksi)
+    public function edit(stok $stok)
     {
         //
     }
@@ -50,7 +50,7 @@ class DetailTransaksiController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, DetailTransaksi $detailTransaksi)
+    public function update(Request $request, stok $stok)
     {
         //
     }
@@ -58,7 +58,7 @@ class DetailTransaksiController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(DetailTransaksi $detailTransaksi)
+    public function destroy(stok $stok)
     {
         //
     }
