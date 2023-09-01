@@ -1,7 +1,10 @@
 <?php
+
 namespace App\Http\Controllers;
+
 use App\Models\Perusahaan;
 use Illuminate\Http\Request;
+
 class PerusahaanController extends Controller
 {
     //
@@ -16,17 +19,16 @@ class PerusahaanController extends Controller
         $data = [
             'perusahaan' => $this->model->first()
         ];
-         //echo json_encode($data);
-         return view('perusahaan.index', $data);
-        }
+        //echo json_encode($data);
+        return view('perusahaan.index', $data);
+    }
 
-        public function edit()
+    public function edit()
     {
         //Halaman form untuk edit
         $data = [
             'perusahaan' => $this->model->first()
         ];
-
         return view('perusahaan.edit', $data);
     }
     public function simpan(Request $request)

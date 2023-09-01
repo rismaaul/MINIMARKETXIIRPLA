@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\perusahaan as AppPerusahaan;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Auth;
 
-class perusahaan extends Seeder
+class akunSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,7 +14,6 @@ class perusahaan extends Seeder
     public function run(): void
     {
         //
-        AppPerusahaan::factory(1)
-            ->create();
+        Auth::factory(1)->create();
     }
 }

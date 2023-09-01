@@ -11,11 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tbl_akun', function (Blueprint $table) {
-            $table->integer('id_akun')->nullable(false)->autoIncrement();
-            $table->string('username',100)->nullable(false);
-            $table->text('password');
-            $table->enum('role',['admin','kasir']);
+        Schema::create('perusahaan', function (Blueprint $table) {
+           $table->integer('id_perusahaan',true)->nullable(false);
+           $table->string('nama_perusahaan',100)->nullable(false);
+           $table->text('alamat')->nullable(false);
         });
     }
 
@@ -24,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tbl_akun');
+        Schema::dropIfExists('perusahaan');
     }
 };
