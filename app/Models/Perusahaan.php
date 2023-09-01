@@ -11,5 +11,5 @@ class Perusahaan extends Model
     protected $table = 'perusahaan';
     public $timestamps = false;
     protected $primaryKey = 'id_perusahaan';
-    protected $fillable = ['nama_perusahaan', 'alamat'];
+    protected $fillable = ['nama_perusahaan','alamat'];
 }

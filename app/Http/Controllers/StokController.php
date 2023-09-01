@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Stok;
+use App\Models\stok;
 use Illuminate\Http\Request;
 
 class StokController extends Controller
@@ -34,7 +34,7 @@ class StokController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Stok $stok)
+    public function show(stok $stok)
     {
         //
     }
@@ -42,7 +42,7 @@ class StokController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Stok $stok)
+    public function edit(stok $stok)
     {
         //
     }
@@ -50,7 +50,7 @@ class StokController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Stok $stok)
+    public function update(Request $request, stok $stok)
     {
         //
     }
@@ -58,7 +58,7 @@ class StokController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Stok $stok)
+    public function destroy(stok $stok)
     {
         //
     }

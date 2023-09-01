@@ -26,7 +26,7 @@ class CabangController extends Controller
             'alamat'        => ['required'],
             'penanggung_jawab' => ['required'] 
         ]);
-
+        
         //Check Validasi
         if($validate):
             if($request->input('id_cabang') !== null):

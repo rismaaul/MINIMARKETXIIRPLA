@@ -11,5 +11,8 @@ class Kasir extends Model
     protected $table = 'kasir';
     protected $primaryKey = 'id_kasir';
     public $timestamps = false;
-    protected $fillable = ['id_cabang','id_akun','nama_lengkap','tanggal_lahir','jenis_kelamin','alamat'];
+    protected $fillable = ['id_cabang','id_akun',
+                            'nama_lengkap','tanggal_lahir','jenis_kelamin',
+                            'alamat'
+                        ];
 }

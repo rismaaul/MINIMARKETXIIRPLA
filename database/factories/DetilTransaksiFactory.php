@@ -3,12 +3,11 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Facades\Hash;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Auth>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\DetilTransaksi>
  */
-class AuthFactory extends Factory
+class DetilTransaksiFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -19,9 +18,6 @@ class AuthFactory extends Factory
     {
         return [
             //
-            'username' => fake('id')->userName(),
-            'password' => Hash::make('123456'),
-            'role'     => 'admin'
         ];
     }
 }

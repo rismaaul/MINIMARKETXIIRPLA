@@ -14,9 +14,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::prefix('/dashboard')->group(function(){
     Route::get('/perusahaan',[PerusahaanController::class,'index']);
     Route::get('/perusahaan/edit',[PerusahaanController::class,'edit']);

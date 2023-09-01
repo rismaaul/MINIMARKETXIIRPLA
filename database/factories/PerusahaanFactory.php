@@ -1,6 +1,9 @@
 <?php
+
 namespace Database\Factories;
+
 use Illuminate\Database\Eloquent\Factories\Factory;
+
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\perusahaan>
  */
@@ -15,8 +18,11 @@ class PerusahaanFactory extends Factory
     {
         return [
             //
-            'nama_perusahaan' => "PT. INDOMARCO TBK",
-            'alamat'            => fake('id_ID')->address()
+            
+            'nama_perusahaan' 
+                => "PT. INDOMARCO TBK",
+            'alamat'           
+                => fake('id_ID')->address()
         ];
     }
 }

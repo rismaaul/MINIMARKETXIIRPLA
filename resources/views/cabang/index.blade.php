@@ -63,6 +63,7 @@ $('.DataTable tbody').on('click','.hapusBtn',function(a){
             confirmButtonText: 'Setuju',
             cancelButtonText: `Batal`,
             confirmButtonColor: 'red'
+
         }).then((result)=>{
             if(result.isConfirmed){
                 //dilakukan proses hapus
